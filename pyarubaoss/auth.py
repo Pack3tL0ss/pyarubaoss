@@ -18,7 +18,7 @@ class AOSSAuth():
         self.version = version
 
 
-    def logout(self):
+    def logout(self, version):
         url_login = "http://" + self.ipaddr + "/rest/" + version + "/login-sessions"
         r = requests.delete(url_login, headers=self.cookie)
         return r.status_code
