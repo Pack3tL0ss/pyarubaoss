@@ -38,3 +38,4 @@ def toggle_poe_port(auth, poeOn, myport):
         return "PoE is " + r_status + " on port " + myport
     except requests.exceptions.RequestException as error:
         return "Error:\n" + str(error) + " toggle_poe_ports: An Error has occured"
+    
